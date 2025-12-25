@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutSP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".ui.admin.AdminManageUsersFragment" >
+
+    <Spinner
+        android:id="@+id/spinnerUsersAdmin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchAdminUsers" />
+
+    <Button
+        android:id="@+id/searchAdminBtnUsers"
+        android:layout_width="90dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/darkBrown"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:icon="@drawable/search"
+        app:iconSize="40dp"
+        app:iconTint="@color/lightGrey"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="@+id/searchAdminUsers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchAdminUsers" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchAdminUsers"
+        android:layout_width="293dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:hint="Search user by name, ID..."
+        android:textAlignment="textStart"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/searchBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsersAdmin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUsersAdmin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

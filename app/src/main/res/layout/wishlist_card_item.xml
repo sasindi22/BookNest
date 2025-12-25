@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightGrey">
+
+    <Button
+        android:id="@+id/deleteBtnWL"
+        android:layout_width="64dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#CC0707"
+        app:icon="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageWL"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/girl_reading" />
+
+    <TextView
+        android:id="@+id/titleWL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Harry Potter and the Prisoners of Azkaban"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageWL"
+        app:layout_constraintTop_toTopOf="@+id/imageWL" />
+
+    <TextView
+        android:id="@+id/authorWL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="J K Rowlings"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/titleWL"
+        app:layout_constraintTop_toBottomOf="@+id/titleWL" />
+
+    <TextView
+        android:id="@+id/priceWL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 870"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/authorWL"
+        app:layout_constraintTop_toBottomOf="@+id/authorWL" />
+
+    <TextView
+        android:id="@+id/countWL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Available Items: 10"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/priceWL"
+        app:layout_constraintTop_toBottomOf="@+id/priceWL" />
+
+    <Button
+        android:id="@+id/cartBtnWL"
+        android:layout_width="64dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/darkBrown"
+        app:icon="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteBtnWL"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtnWL" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

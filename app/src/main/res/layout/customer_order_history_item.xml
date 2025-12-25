@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightGrey">
+
+    <TextView
+        android:id="@+id/orderIdOH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Order ID: gkwdhjwnxkjbjhdsa"
+        android:textColor="@color/darkBrown"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateOH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="2024.12.14 12:34 AM"
+        android:textColor="@color/darkBrown"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/orderIdOH"
+        app:layout_constraintTop_toBottomOf="@+id/orderIdOH" />
+
+    <TextView
+        android:id="@+id/orderList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Harry Potter and The Sorceres Stone, Percy Jackson and Lighning Theif, Good Girl's Guide To Murder"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dateOH"
+        app:layout_constraintTop_toBottomOf="@+id/dateOH" />
+
+    <TextView
+        android:id="@+id/statusOH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Delivered"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/orderList"
+        app:layout_constraintTop_toBottomOf="@+id/orderList" />
+
+    <TextView
+        android:id="@+id/totalAmountOH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 4560"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/statusOH"
+        app:layout_constraintTop_toBottomOf="@+id/statusOH" />
+
+    <TextView
+        android:id="@+id/addressOH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="167/A/6, Bogahalanda watta, Brahmanagama"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/totalAmountOH"
+        app:layout_constraintTop_toBottomOf="@+id/totalAmountOH" />
+</androidx.constraintlayout.widget.ConstraintLayout>

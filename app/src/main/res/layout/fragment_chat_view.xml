@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutSP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ChatViewFragment" >
+
+    <TextView
+        android:id="@+id/userMobileDataChat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="0705839524"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameDataChat"
+        app:layout_constraintStart_toStartOf="@+id/userNameDataChat"
+        app:layout_constraintTop_toBottomOf="@+id/userNameDataChat" />
+
+    <TextView
+        android:id="@+id/userNameDataChat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Sahan Perera (Admin)"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userPfpChat"
+        app:layout_constraintTop_toTopOf="@+id/userPfpChat" />
+
+    <ImageView
+        android:id="@+id/userPfpChat"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_image_profile" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/chatMsgHere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userMobileDataChat" />
+
+    <EditText
+        android:id="@+id/chatMsgHere"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="message..."
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chatSendHere"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/chatSendHere"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/send"
+        app:layout_constraintBottom_toBottomOf="@+id/chatMsgHere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chatMsgHere" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

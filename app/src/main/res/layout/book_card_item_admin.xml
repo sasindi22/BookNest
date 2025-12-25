@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/lightGrey">
+
+    <Button
+        android:id="@+id/viewMoreBtnAdmin"
+        android:layout_width="90dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/darkBrown"
+        android:fontFamily="@font/poppins_regular"
+        android:text="More"
+        android:textAlignment="center"
+        android:textColor="@color/lightGrey"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceBook2" />
+
+    <Button
+        android:id="@+id/removeBookAdmin"
+        android:layout_width="65dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#DE0B0B"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:textColor="@color/lightGrey"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:icon="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMoreBtnAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/priceBook2"
+        app:layout_constraintStart_toEndOf="@+id/viewMoreBtnAdmin"
+        app:layout_constraintTop_toTopOf="@+id/viewMoreBtnAdmin" />
+
+    <TextView
+        android:id="@+id/priceBook2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 860"
+        android:textAlignment="center"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameAuthor2" />
+
+    <TextView
+        android:id="@+id/nameAuthor2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="J K Rowlings"
+        android:textAlignment="center"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBook2" />
+
+    <TextView
+        android:id="@+id/titleBook2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Harry Potter and the Prisoners of Azkaban"
+        android:textAlignment="center"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBookAdmin" />
+
+    <ImageView
+        android:id="@+id/imageBookAdmin"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/girl_reading"
+        tools:srcCompat="@drawable/girl_reading" />
+</androidx.constraintlayout.widget.ConstraintLayout>

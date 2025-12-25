@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation3"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="lk.javainstitute.booknest.ui.admin.AdminHomeFragment"
+        android:label="@string/admin_menu_home"
+        tools:layout="@layout/fragment_admin_home" />
+
+    <fragment
+        android:id="@+id/nav_manage_books_admin"
+        android:name="lk.javainstitute.booknest.ui.admin.AdminManageBooksFragment"
+        android:label="@string/admin_menu_manage_books"
+        tools:layout="@layout/fragment_admin_manage_books" />
+
+    <fragment
+        android:id="@+id/nav_manage_users_admin"
+        android:name="lk.javainstitute.booknest.ui.admin.AdminManageUsersFragment"
+        android:label="@string/admin_menu_manage_users"
+        tools:layout="@layout/fragment_admin_manage_users" />
+
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="lk.javainstitute.booknest.MessageUserListFragment"
+        android:label="Message User List"
+        tools:layout="@layout/fragment_message_user_list" />
+
+    <fragment
+        android:id="@+id/nav_message_fragment"
+        android:name="lk.javainstitute.booknest.MessagesFragment"
+        android:label="Message Fragment"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="lk.javainstitute.booknest.UserProfileFragment"
+        android:label="@string/seller_menu_profile"
+        tools:layout="@layout/fragment_user_profile" />
+</navigation>

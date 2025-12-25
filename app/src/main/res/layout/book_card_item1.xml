@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bookCoverBL"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/girl_reading"
+        tools:srcCompat="@drawable/girl_reading" />
+
+    <TextView
+        android:id="@+id/bookTitleBL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Harry Potter and the Sourcerece Stone"
+        android:textAlignment="textStart"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bookCoverBL"
+        app:layout_constraintTop_toTopOf="@+id/bookCoverBL" />
+
+    <TextView
+        android:id="@+id/authorNameBL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="J K Rowlings"
+        android:textAlignment="textStart"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bookTitleBL"
+        app:layout_constraintStart_toStartOf="@+id/bookTitleBL"
+        app:layout_constraintTop_toBottomOf="@+id/bookTitleBL" />
+
+    <TextView
+        android:id="@+id/bookPriceBL"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 860"
+        android:textAlignment="textStart"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/authorNameBL"
+        app:layout_constraintStart_toStartOf="@+id/authorNameBL"
+        app:layout_constraintTop_toBottomOf="@+id/authorNameBL" />
+
+    <Button
+        android:id="@+id/moreBL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/darkBrown"
+        android:fontFamily="@font/poppins_regular"
+        android:text="more"
+        android:textColor="@color/lightGrey"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bookTitleBL" />
+
+    <Button
+        android:id="@+id/updateBL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/darkBrown"
+        android:fontFamily="@font/poppins_regular"
+        android:text="update"
+        android:textColor="@color/lightGrey"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/moreBL"
+        app:layout_constraintEnd_toStartOf="@+id/moreBL"
+        app:layout_constraintTop_toBottomOf="@+id/bookPriceBL" />
+</androidx.constraintlayout.widget.ConstraintLayout>

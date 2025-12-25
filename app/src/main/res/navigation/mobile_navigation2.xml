@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerHomeFragment"
+        android:label="@string/customer_menu_home"
+        tools:layout="@layout/fragment_customer_home" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerSearchFragment"
+        android:label="@string/customer_menu_search"
+        tools:layout="@layout/fragment_customer_search" />
+
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerWishlistFragment"
+        android:label="@string/customer_menu_wishlist"
+        tools:layout="@layout/fragment_customer_wishlist" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerCartFragment"
+        android:label="@string/customer_menu_cart"
+        tools:layout="@layout/fragment_customer_cart" />
+
+    <fragment
+        android:id="@+id/nav_order_history"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerOrderHistoryFragment"
+        android:label="@string/customer_menu_order_history"
+        tools:layout="@layout/fragment_customer_order_history" />
+
+    <fragment
+        android:id="@+id/nav_checkout"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerCheckoutFragment"
+        android:label="@string/customer_menu_checkout"
+        tools:layout="@layout/fragment_customer_checkout" />
+
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerLocationFragment"
+        android:label="@string/customer_menu_location"
+        tools:layout="@layout/fragment_customer_location" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="lk.javainstitute.booknest.ui.customer.CustomerContactFragment"
+        android:label="@string/customer_menu_contact"
+        tools:layout="@layout/fragment_customer_contact" />
+
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="lk.javainstitute.booknest.MessageUserListFragment"
+        android:label="Message User List"
+        tools:layout="@layout/fragment_message_user_list" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="lk.javainstitute.booknest.UserProfileFragment"
+        android:label="@string/seller_menu_profile"
+        tools:layout="@layout/fragment_user_profile" />
+
+</navigation>

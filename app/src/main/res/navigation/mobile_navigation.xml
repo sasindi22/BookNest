@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="lk.javainstitute.booknest.ui.seller.SellerHomeFragment"
+        android:label="@string/seller_menu_home"
+        tools:layout="@layout/fragment_seller_home" />
+
+    <fragment
+        android:id="@+id/nav_analytics"
+        android:name="lk.javainstitute.booknest.ui.seller.SellerAnalyticsFragment"
+        android:label="@string/seller_menu_analytics"
+        tools:layout="@layout/fragment_seller_analytics" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="lk.javainstitute.booknest.ui.seller.SellerOrdersFragment"
+        android:label="@string/seller_menu_orders"
+        tools:layout="@layout/fragment_seller_orders" />
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="lk.javainstitute.booknest.ui.seller.SellerManageBooksFragment"
+        android:label="@string/seller_menu_add_books"
+        tools:layout="@layout/fragment_seller_manage_books" />
+
+    <fragment
+        android:id="@+id/nav_listing"
+        android:name="lk.javainstitute.booknest.ui.seller.SellerBookListingFragment"
+        android:label="@string/seller_menu_listing"
+        tools:layout="@layout/fragment_seller_book_listing" />
+
+    <fragment
+        android:id="@+id/nav_promotions"
+        android:name="lk.javainstitute.booknest.ui.seller.SellerPromotionsFragment"
+        android:label="@string/seller_menu_promotions"
+        tools:layout="@layout/fragment_seller_promotions" />
+
+    <fragment
+        android:id="@+id/nav_messages"
+        android:name="lk.javainstitute.booknest.MessageUserListFragment"
+        android:label="Message User List"
+        tools:layout="@layout/fragment_message_user_list" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="lk.javainstitute.booknest.UserProfileFragment"
+        android:label="@string/seller_menu_profile"
+        tools:layout="@layout/fragment_user_profile" />
+</navigation>

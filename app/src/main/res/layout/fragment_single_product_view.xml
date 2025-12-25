@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutSP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".SingleProductViewFragment" >
+
+    <Button
+        android:id="@+id/addToWishlistBtn"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/darkBrown"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Add To Wishlist"
+        android:textColor="@color/lightGrey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/addToCartBtn"
+        app:layout_constraintStart_toStartOf="@+id/addToCartBtn"
+        app:layout_constraintTop_toBottomOf="@+id/addToCartBtn" />
+
+    <ImageView
+        android:id="@+id/bookImageSP"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/girl_reading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bookNameSP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Harry Potter and The Prisoners of Azkaban"
+        android:textAlignment="viewStart"
+        android:textColor="@color/darkBrown"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookImageSP" />
+
+    <TextView
+        android:id="@+id/priceSP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 780"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/authorSP"
+        app:layout_constraintStart_toStartOf="@+id/authorSP"
+        app:layout_constraintTop_toBottomOf="@+id/authorSP" />
+
+    <TextView
+        android:id="@+id/bookDescSP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="give one or two sentences long description about the book here"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/bookNameSP"
+        app:layout_constraintStart_toStartOf="@+id/bookNameSP"
+        app:layout_constraintTop_toBottomOf="@+id/bookNameSP" />
+
+    <Button
+        android:id="@+id/downBtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightBrown"
+        app:icon="@drawable/remove"
+        app:layout_constraintStart_toStartOf="@+id/priceSP"
+        app:layout_constraintTop_toBottomOf="@+id/priceSP" />
+
+    <TextView
+        android:id="@+id/qtySP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="10"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/downBtn"
+        app:layout_constraintStart_toEndOf="@+id/downBtn"
+        app:layout_constraintTop_toTopOf="@+id/downBtn" />
+
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/lightBrown"
+        app:icon="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@+id/qtySP"
+        app:layout_constraintStart_toEndOf="@+id/qtySP"
+        app:layout_constraintTop_toTopOf="@+id/qtySP" />
+
+    <Button
+        android:id="@+id/addToCartBtn"
+        android:layout_width="240dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/darkBrown"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Add To Cart"
+        android:textColor="@color/lightGrey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downBtn" />
+
+    <TextView
+        android:id="@+id/authorSP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="J K Rowlings"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/bookDescSP"
+        app:layout_constraintStart_toStartOf="@+id/bookDescSP"
+        app:layout_constraintTop_toBottomOf="@+id/bookDescSP" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+        android:propertyName="translationY"
+        android:valueFrom="-500dp"
+        android:valueTo="300dp"
+        android:duration="800"
+        android:interpolator="@android:interpolator/accelerate_quad"/>
+
+    <objectAnimator
+        android:propertyName="translationY"
+        android:valueFrom="300dp"
+        android:valueTo="150dp"
+        android:duration="400"
+        android:interpolator="@android:interpolator/decelerate_quad"/>
+
+    <objectAnimator
+        android:propertyName="translationY"
+        android:valueFrom="150dp"
+        android:valueTo="200dp"
+        android:duration="300"
+        android:interpolator="@android:interpolator/bounce"/>
+</set>

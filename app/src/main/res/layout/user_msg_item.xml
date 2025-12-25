@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/userPfp"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_image_profile" />
+
+    <TextView
+        android:id="@+id/userNameData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Sahan Perera (Admin)"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/expandChatBtn"
+        app:layout_constraintStart_toEndOf="@+id/userPfp"
+        app:layout_constraintTop_toTopOf="@+id/userPfp" />
+
+    <TextView
+        android:id="@+id/userMobileData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="0705839524"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameData"
+        app:layout_constraintStart_toStartOf="@+id/userNameData"
+        app:layout_constraintTop_toBottomOf="@+id/userNameData" />
+
+    <ImageView
+        android:id="@+id/expandChatBtn"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userMobileData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userNameData"
+        app:srcCompat="@drawable/message" />
+</androidx.constraintlayout.widget.ConstraintLayout>

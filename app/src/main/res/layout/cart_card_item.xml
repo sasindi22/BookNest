@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lightGrey">
+
+    <Button
+        android:id="@+id/increaseButton"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/darkBrown"
+        android:text="-"
+        android:textColor="@color/darkBrown"
+        android:textSize="24sp"
+        app:icon="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@+id/quantityText"
+        app:layout_constraintStart_toEndOf="@+id/quantityText"
+        app:layout_constraintTop_toTopOf="@+id/quantityText" />
+
+    <Button
+        android:id="@+id/deleteBtnWL2"
+        android:layout_width="64dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#CC0707"
+        app:icon="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/increaseButton" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 1740"
+        android:textColor="@color/darkBrown"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/decreaseButton"
+        app:layout_constraintTop_toBottomOf="@+id/decreaseButton" />
+
+    <TextView
+        android:id="@+id/priceWL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Rs. 870"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/authorWL2"
+        app:layout_constraintTop_toBottomOf="@+id/authorWL2" />
+
+    <TextView
+        android:id="@+id/authorWL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="J K Rowlings"
+        android:textColor="@color/darkBrown"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/titleWL2"
+        app:layout_constraintTop_toBottomOf="@+id/titleWL2" />
+
+    <TextView
+        android:id="@+id/titleWL2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="Harry Potter and the Prisoners of Azkaban"
+        android:textColor="@color/darkBrown"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCart"
+        app:layout_constraintTop_toTopOf="@+id/imageCart" />
+
+    <ImageView
+        android:id="@+id/imageCart"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/girl_reading" />
+
+    <TextView
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/merriweather_regular"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/decreaseButton"
+        app:layout_constraintStart_toEndOf="@+id/decreaseButton"
+        app:layout_constraintTop_toTopOf="@+id/decreaseButton" />
+
+    <Button
+        android:id="@+id/decreaseButton"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/darkBrown"
+        android:text="-"
+        android:textColor="@color/darkBrown"
+        android:textSize="24sp"
+        app:icon="@drawable/remove"
+        app:layout_constraintStart_toStartOf="@+id/priceWL2"
+        app:layout_constraintTop_toBottomOf="@+id/priceWL2" />
+    <!--    <NumberPicker-->
+<!--        android:id="@+id/numberPicker"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/priceWL2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/priceWL2" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

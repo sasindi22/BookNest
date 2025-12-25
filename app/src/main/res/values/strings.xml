@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Welcome Page-->
+    <string name="btn1">Get Started</string>
+    <string name="title1">Welcome to BookNest!</string>
+    <string name="text1">Your cozy digital haven for book lovers! Discover, shop, and lose yourself in stories that inspire, entertain, and enlighten.</string>
+
+    <!-- SignIn/ SignUp/ SignOut Pages-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="signIn">Sign In!</string>
+    <string name="app_name">BookNest</string>
+    <string name="newAcc">Create New Account!</string>
+    <string name="loginText">New to BookNest? Register here!</string>
+    <string name="registerText">Already have an account? Sign In!</string>
+    <string name="signInText">We missed you! Sign in to catch up!</string>
+    <string name="createAccText">Join us and get started on your journey!</string>
+
+    <!-- Seller: Menu Bar Titles -->
+    <string name="seller_menu_home">Home</string>
+    <string name="seller_menu_analytics">Analytics</string>
+    <string name="seller_menu_orders">Orders</string>
+    <string name="seller_menu_add_books">Add/ Manage Books</string>
+    <string name="seller_menu_messages">Messages</string>
+    <string name="seller_menu_listing">Book Listing</string>
+    <string name="seller_menu_promotions">Promotions</string>
+    <string name="seller_menu_profile">Profile</string>
+
+    <!-- Customer: Menu Bar Titles -->
+    <string name="customer_menu_home">Home</string>
+    <string name="customer_menu_search">Search</string>
+    <string name="customer_menu_wishlist">Wishlist</string>
+    <string name="customer_menu_cart">Cart</string>
+    <string name="customer_menu_order_history">Order History</string>
+    <string name="customer_menu_checkout">Checkout</string>
+    <string name="customer_menu_location">Store Locator</string>
+    <string name="customer_menu_contact">Contact Us</string>
+
+    <!-- Admin: Menu Bar Titles -->
+    <string name="admin_menu_home">Home</string>
+    <string name="admin_menu_manage_books">Manage Books</string>
+    <string name="admin_menu_manage_users">Manage Users</string>
+    <string name="admin_menu_profile">Profile</string>
+
+    <!-- Seller: Home Texts -->
+    <string name="seller_home_text1">Today\'s Sales</string>
+    <string name="seller_home_text2">Pending Orders</string>
+    <string name="seller_home_text3">Active Promotions</string>
+
+    <!-- Seller: Analytics Texts -->
+    <string name="seller_analytic_text1">Best Selling Authors</string>
+    <string name="seller_analytic_text2">Best Selling Genre</string>
+    <string name="seller_analytic_text3">rotate to landscape to view sales analytics</string>
+    <string name="seller_analytic_text4">rotate to portrait to view book analytics</string>
+
+    <!-- Seller: Add Manage Books Texts -->
+    <string name="seller_manage_text1">Add To Store</string>
+
+    <!-- Seller: Promotions Texts -->
+    <string name="seller_promo_text1">Add New Promotion</string>
+
+    <!-- Profile Texts -->
+    <string name="profile_btn1">Update Profile</string>
+    <string name="profile_btn2">Logout</string>
+
+    <!-- Default Texts -->
+    <string name="title_activity_seller_dashboard">SellerDashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_customer_dashboard">CustomerDashboardActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_admin_dashboard">AdminDashboardActivity</string>
+
+</resources>
